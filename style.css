@@ -7,6 +7,7 @@
 
 .main {
     background-color: #fbfaff;
+    background: linear-gradient(to bottom, #fbfaff, #ece9ff);
 }
 
 .navbar_ {
@@ -28,16 +29,28 @@
     flex: 1;
 }
 
+.nav-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
 .nav-item a {
     padding: 0 !important;
     height: max-content;
 }
 
-.purple_txt {
+.arrow {
+    font-size: 12px;
+    height: 10px;
+    color: #6952ff;
+}
+
+.purple_link {
     color: #6851ff !important;
 }
 
-.butn {
+.toggle_butn {
     font-size: 30px;
 }
 
@@ -47,17 +60,18 @@
     padding: 0 24px;
 }
 
-.sec_1 {
+.sec {
     margin: 48px 0;
     display: grid;
     align-items: center;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 1fr 1fr;
     gap: 2.5rem;
 }
 
 .abut {
     font-size: 2.1rem;
     font-weight: 400;
+    line-height: 1.4;
 }
 
 .talent {
@@ -67,6 +81,8 @@
 .talent , .meets {
     font-size: 3rem;
     font-weight: 700;
+    /* height: 10px; */
+    line-height: 1.2;
 }
 
 .sml_txt {
@@ -79,9 +95,17 @@
     margin-bottom: 16px;
 }
 
-.image img {
+.image {
     width: 100%;
+    padding: 12px;
+    display: flex;
+} 
+
+.image_album img {
+    max-width: 100%;
+    display: block;
     height: auto;
+    padding: 12px;
 }
 
 .txt_2 {
@@ -109,7 +133,7 @@
     font-weight: 700;
 }
 
-.heading1 {
+.heading_ {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 8px;
@@ -120,6 +144,18 @@
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5;
+}
+
+.text .smal_para  {
+    font-size: 0.875rem;
+}
+
+.strong {
+    color: #000;
+}
+
+._2 {
+    margin: 7rem 0;
 }
 
 .sec_3 {
@@ -168,7 +204,7 @@
     height: 10rem;
 }
 
-.yell {
+.yelow {
     grid-row: span 2; 
     background-color: #fef08a;
 }
@@ -199,8 +235,104 @@
     height: 10rem;
 }
 
-.headingp {
+.heading_journey {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 16px;
+}
+
+.txt p {
+    color: #000;
+}
+
+.album2 img {
+    border-radius: 2.75rem;
+}
+
+.sec_4_mission_vision {
+    display: grid;
+    grid-template-columns: repeat(1fr, 1fr);
+    margin-top: 5rem;
+    gap: 3rem 4rem;
+}
+
+.heading_mission_vision_card {
+    grid-column: span 2;
+    text-align: center;
+    font-size: 2.125rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.card_ {
+    padding: 2em;
+    background-color: #fff;
+    border-radius: .75em;
+}
+
+.heading_mission_vision {
+    color: #6851ff;
+    font-size: 1.5em;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.norml_txt_mission_vision {
+    margin: 0;
+    line-height: 1.5;
+    color: #000;
+}
+
+.sec_5_news {
+    margin-top: 10em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3em 2em;
+}
+
+.heading_news_cards {
+    grid-column: span 3;
+    font-size: 2.125rem;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+}
+
+.card_pic img {
+    width: 100%;
+    border-top-left-radius: 0.25em;
+    border-top-right-radius: 0.25em;
+}
+
+.news_card {
+    display: flex;
+    flex-direction: column;
+}
+
+.about_card {
+    padding: 1em;
+    padding-bottom: 1.5em;
+    background-color: #fff;
+    border-bottom-left-radius: 0.25em;
+    border-bottom-right-radius: 0.25em;
+    flex-grow: 1; /* Ye ensure karega ke ye portion bacha hua height fill kare */
+    display: flex;
+    flex-direction: column;
+}
+
+.card_heading {
+    font-size: 1.25em;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+    font-weight: 700;
+    color: #6851ff;
+}
+
+.card_text {
+    font-weight: 400;
+    font-size: 0.875em;
+    line-height: 1.72em;
+    color: #1f2937;
 }
