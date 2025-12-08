@@ -28,6 +28,7 @@ body {
 
 .logo img { 
     width: 186px; 
+    cursor: pointer;
 }
 
 .nav_links_container {
@@ -48,6 +49,7 @@ body {
 .arrow { 
     font-size: 12px; 
     height: 10px; color: #6952ff; 
+    cursor: pointer;
 } 
 
 #purple_link { 
@@ -56,6 +58,7 @@ body {
 
 .toggle_butn { 
     font-size: 30px; 
+    cursor: pointer;
 }
 
 /* HAM-BURGER */
@@ -574,7 +577,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: .5em;
+    padding: .5em 0.25em;
     border-top: 1px solid #fff;
     font-size: 1em;
     font-weight: 400;
@@ -593,6 +596,10 @@ body {
 
 .privacy_terms p:hover {
     text-decoration: underline;
+}
+
+.copyright {
+    text-align: center;
 }
 
 
